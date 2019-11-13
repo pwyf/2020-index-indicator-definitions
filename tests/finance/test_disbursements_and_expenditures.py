@@ -29,7 +29,7 @@ class TestDisbursementsAndExpenditures(TestCase):
         </iati-activity>
         '''
 
-        for transaction_type in ['3', 'D', '4', 'E']:
+        for transaction_type in ['3', '4']:
             activity = etree.fromstring(xml.format(transaction_type))
             result = self.test(activity)
 
